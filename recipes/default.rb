@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: cronapt-cookbook
+# Cookbook Name:: cronapt
 # Recipe:: default
 #
 # Copyright (C) 2014 YOUR_NAME
