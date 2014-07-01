@@ -34,6 +34,19 @@ template "/etc/cron-apt/action.d/6-upgrade" do
   )
 end
 
+template "/etc/apt/apt.conf.d/local" do
+  source "dpkg-options.erb"
+  owner "root"
+  group 0
+  mode 00644
+  variables(
+    :force_confmiss => node['cronapt']['force_confmiss'],
+    :force_confnew => node['cronapt']['force_confnew'],
+    :force_confdef => node['cronapt']['force_confdef'],
+    :force_confold => node['cronapt']['force_confold'],
+  )
+end
+
 template "/etc/cron-apt/config" do
   source "config.erb"
   owner "root"

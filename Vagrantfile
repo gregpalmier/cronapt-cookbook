@@ -76,7 +76,9 @@ Vagrant.configure("2") do |config|
     chef.json = {
         :cronapt => {
           :enable_upgrade => 'true',
-          :fivemin => 'true'
+          :fivemin => 'true',
+          :force_confdef => 'true',
+          :force_confold => 'true'
       }
     }
 
