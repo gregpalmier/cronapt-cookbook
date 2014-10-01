@@ -17,9 +17,9 @@ In your Vagrantfile, customize these attributes:
 ````
     chef.json = {
         :cronapt => {
-          :mailto => "you@example.com",
-          :enable_upgrade => 'true',
-          :fivemin => 'true'
+          :mailto => 'you@example.com',
+          :enable_upgrade => true,
+          :fivemin => true
       }
     }
 ````
@@ -28,12 +28,16 @@ Attributes
 ----------
 
 ````
-default['cronapt']['mailto']           = "your@email.com"
-default['cronapt']['mailon']           = "always"
+default['cronapt']['mailto']           = 'your@email.com'
+default['cronapt']['mailon']           = 'always'
 default['cronapt']['enable_upgrade']   = false
 default['cronapt']['nightly']          = false
 default['cronapt']['hourly']           = false
 default['cronapt']['fivemin']          = false
+default['cronapt']['force_confmiss']   = false
+default['cronapt']['force_confnew']    = false
+default['cronapt']['force_confdef']    = false
+default['cronapt']['force_confold']    = false
 ````
 
 Recipes
