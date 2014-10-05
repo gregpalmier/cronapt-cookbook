@@ -1,6 +1,8 @@
 cron-apt cookbook
 ------------------
 
+[![Build Status](https://secure.travis-ci.org/gregpalmier/cronapt-cookbook.png)](http://travis-ci.org/gregpalmier/cronapt-cookbook)
+
 This cookbook provides a basic cron-apt management.
 
 Requirements
