@@ -82,7 +82,7 @@ Vagrant.configure('2') do |config|
     }
     chef.run_list = [
       'recipe[apt]',
-      'recipe[cronapt]'
+      'recipe[cronapt::keepupdated]'
     ]
   end
 end
