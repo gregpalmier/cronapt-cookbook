@@ -26,7 +26,6 @@ template '/etc/cron.d/cron-apt' do
   group 0
   mode 00644
   variables(
-    enable_upgrade: node['cronapt']['enable_upgrade'],
     nightly: node['cronapt']['nightly'],
     hourly: node['cronapt']['hourly'],
     fivemin: node['cronapt']['fivemin']
