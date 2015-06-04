@@ -30,7 +30,7 @@ Attributes
 ----------
 
 ````
-default['cronapt']['mailto']           = 'your@email.com'
+default['cronapt']['mailto']           = 'you@example.com'
 default['cronapt']['mailon']           = 'always'
 default['cronapt']['enable_upgrade']   = false
 default['cronapt']['nightly']          = false
@@ -40,6 +40,7 @@ default['cronapt']['force_confmiss']   = false
 default['cronapt']['force_confnew']    = false
 default['cronapt']['force_confdef']    = false
 default['cronapt']['force_confold']    = false
+default['cronapt']['keepupdated']      = %w(bash)
 ````
 
 Recipes
