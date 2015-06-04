@@ -8,4 +8,4 @@ default['cronapt']['force_confmiss']   = false
 default['cronapt']['force_confnew']    = false
 default['cronapt']['force_confdef']    = false
 default['cronapt']['force_confold']    = false
-default['cronapt']['keepupdated']      = %w(bash)
+default['cronapt']['keepupdated']      = %w(bash openssl)
